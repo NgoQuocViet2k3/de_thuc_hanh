@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    function checkCharacter(arr) {
+        let count = 0;
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "a" || arr[i] === "u" || arr[i] === "i" || arr[i] === "e" || arr[i] === "o") {
+                count++;
+                index = 1;
+
+            }
+        }
+        if (index !== -1) {
+            alert("Chuỗi nhập có " + count + " kí tự nguyên âm")
+        } else {
+            alert("Chuỗi không có kí tự nguyên âm nào")
+        }
+    }
+
+    checkCharacter("a", "c","i", "d", "g", "h")
+</script>
+</body>
+</html>
